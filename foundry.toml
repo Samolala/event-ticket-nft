@@ -1,0 +1,14 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+test = "test"
+script = "script"
+
+[profile.default.rpc_endpoints]
+sepolia = "https://eth-sepolia.g.alchemy.com/v2/YOUR_API_KEY"
+
+[etherscan]
+sepolia = { key = "${ETHERSCAN_API_KEY}" }
+
+gas_reports = ["*"]
